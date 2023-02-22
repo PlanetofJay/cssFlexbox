@@ -1,5 +1,12 @@
+/*
+* The Flexible Box Layout Module:
+*   makes it easier to design one-directional flexible responsive layout structures without using float or positioning.
+*
+* The Grid Layout Module:
+*   is the very first CSS module created specifically to be a two-dimensional grid-based layout system.
+*/
 body {
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
   padding: 0;
 }
@@ -9,13 +16,29 @@ header {
 }
 
 main {
+  display: flex;
+  justify-content: space-between;
   background-color: red;
 }
 
 main article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* 
+  align-items: flex-end;
+  justify-content: space-around;
+  align-content: flex-end; 
+  height: 500px; 
+  */
+  width: 70%;
+  gap: 20px 40px;
   background-color: lightgreen;
-  display: inline-block;
-  width: 300px;
+}
+
+main article div {
+  width: 100px;
+  border: solid 4px fuchsia;
 }
 
 main aside {
