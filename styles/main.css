@@ -11,50 +11,31 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: lightblue;
-}
-
 main {
-  display: flex;
-  justify-content: space-between;
-  background-color: red;
-}
-
-main article {
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  background-color: lightgreen;
-}
-
-main article div {
-  border: solid 4px fuchsia;
-  padding: 10px;
+  background-color: blue;
+  display: grid;
+  /* grid-template-rows: 100px 150px 80px 250px; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 50px;
 }
 
 .item-1 {
-  flex-grow: 2;   /* 2/7 */
-  flex-shrink: 1;
-  flex-basis: 0;
+  background: lightcoral;
 }
 
 .item-2 {
-  flex-grow: 3;   /* 3/7 */
-  flex-shrink: 1;
-  flex-basis: 0;
+  background: lightcyan;
 }
 
 .item-3 {
-  flex-grow: 2;   /* 2/7 */
-  flex-shrink: 1;
-  flex-basis: 0;
+  background: lightgray;
 }
 
-main aside {
-  background-color: lightgoldenrodyellow;
+.item-4 {
+  background: lightgreen;
 }
 
-footer {
-  background-color: lightcoral;
+.item-5 {
+  background: lightgoldenrodyellow;
 }
