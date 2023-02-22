@@ -24,21 +24,35 @@ main {
 main article {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  /* 
-  align-items: flex-end;
-  justify-content: space-around;
-  align-content: flex-end; 
-  height: 500px; 
-  */
   width: 70%;
-  gap: 20px 40px;
   background-color: lightgreen;
+  /* 
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    align-content: flex-end; 
+    height: 500px; 
+    gap: 20px 40px;
+  */
 }
 
 main article div {
-  width: 100px;
   border: solid 4px fuchsia;
+  padding: 10px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.item-1 {
+  flex-shrink: 1;
+}
+
+.item-2 {
+  flex-shrink: 2;
+}
+
+.item-3 {
+  flex-shrink: 1;
 }
 
 main aside {
@@ -48,4 +62,20 @@ main aside {
 
 footer {
   background-color: lightcoral;
+}
+
+@media only screen and (min-width: 380px) {
+
+  .item-1 { 
+    order: 1;
+  }
+  
+  .item-2 {
+    order: 2;
+  }
+  
+  .item-3 {
+    order: 3;
+  }
+
 }
