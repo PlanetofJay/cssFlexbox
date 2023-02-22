@@ -26,56 +26,35 @@ main article {
   flex-direction: row;
   width: 70%;
   background-color: lightgreen;
-  /* 
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-around;
-    align-content: flex-end; 
-    height: 500px; 
-    gap: 20px 40px;
-  */
 }
 
 main article div {
   border: solid 4px fuchsia;
   padding: 10px;
-  width: 300px;
-  box-sizing: border-box;
 }
 
 .item-1 {
+  flex-grow: 2;   /* 2/7 */
   flex-shrink: 1;
+  flex-basis: 0;
 }
 
 .item-2 {
-  flex-shrink: 2;
+  flex-grow: 3;   /* 3/7 */
+  flex-shrink: 1;
+  flex-basis: 0;
 }
 
 .item-3 {
+  flex-grow: 2;   /* 2/7 */
   flex-shrink: 1;
+  flex-basis: 0;
 }
 
 main aside {
   background-color: lightgoldenrodyellow;
-  display: inline-block;
 }
 
 footer {
   background-color: lightcoral;
-}
-
-@media only screen and (min-width: 380px) {
-
-  .item-1 { 
-    order: 1;
-  }
-  
-  .item-2 {
-    order: 2;
-  }
-  
-  .item-3 {
-    order: 3;
-  }
-
 }
