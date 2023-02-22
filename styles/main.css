@@ -3,3 +3,26 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header {
+  background-color: lightblue;
+}
+
+main {
+  background-color: red;
+}
+
+main article {
+  background-color: lightgreen;
+  display: inline-block;
+  width: 300px;
+}
+
+main aside {
+  background-color: lightgoldenrodyellow;
+  display: inline-block;
+}
+
+footer {
+  background-color: lightcoral;
+}
